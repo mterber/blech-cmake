@@ -1,0 +1,20 @@
+@[CFunction (source = "main.c")]
+extern function hello ()
+@[CFunction (source = "main.c")]
+extern function ping ()
+@[CFunction (source = "main.c")]
+extern function pong ()
+
+@[EntryPoint]
+activity Main () ()
+    
+    hello()
+
+    repeat
+        await true
+        ping()
+
+        await true
+        pong()
+    end
+end
