@@ -1,8 +1,8 @@
-@[CFunction (source = "main.c")]
+@[CFunction (binding = "hello()", header = "main.h")]
 extern function hello ()
-@[CFunction (source = "main.c")]
+@[CFunction (binding = "ping()", header = "main.h")]
 extern function ping ()
-@[CFunction (source = "main.c")]
+@[CFunction (binding = "pong()", header = "main.h")]
 extern function pong ()
 
 @[EntryPoint]

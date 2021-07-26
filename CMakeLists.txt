@@ -48,7 +48,7 @@ set(BLC_OUTPUT_FILES
 # Custom command to run the Blech compiler.
 add_custom_command(
     OUTPUT ${BLC_OUTPUT_FILES}
-    COMMAND blechc -sp ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/${BLC_MAIN}
+    COMMAND blechc --project-dir ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/${BLC_MAIN}
     COMMENT "blechc: compiling ${BLC_MAIN}"
     DEPENDS ${BLC_MAIN}
 )
